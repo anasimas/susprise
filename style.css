@@ -1,26 +1,50 @@
-.container{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    background: linear-gradient(0deg, rgba(164,128,207,1) 11%, rgba(210,100,182,1) 59%, rgba(231,104,196,1) 75%, rgba(255,144,179,1) 100%);
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
     width: 100%;
     height: 100vh;
 }
 
-.header{
+.header {
     margin: 5vh;
+    padding: 5vh;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #f1e4f3;
 }
 
-input, select{
+input,select {
     width: 70%;
+    margin: 1vh;
     padding: 1vh;
     border-radius: 2vh;
+    border-color: #f1e4f3;
+    color: #602437;
 }
 
-.buttons{
-    margin: 3vh;
+label{
+    color:#602437;
+    text-align: center;
 }
 
-#enviar, #limpar{
+#enviar{
     border-radius: 2vh;
     border: none;
     padding: 2vh;
-    width: 30vw;
-    margin: 1vh;
+    width: 100%;
+    margin: 3vh;
+    background-color: #ffc8fb;
+    color: #602437;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
