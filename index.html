@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DateFinder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+        <div class="header d-flex flex-column justify-content-center align-items-center">
+            <h1>DateFinder</h1>
+            <p>lorem ipsum blablabla</p>
+        </div>
+        <div class="input d-flex flex-column justify-content-center align-items-center">
+            <!--Date caro ou economico?-->
+            <label for="opt_1">Você quer um date caro ou econômico?</label>
+            <select name="opt_1" id="opt_1">
+                <option value="1">Econômico</option>
+                <option value="">Aceito gastar um pouquinho a mais</option>
+            </select>
+
+            <!--Horário?-->
+            <label for="opt_2">Você prefere de manhã, tarde ou noite?</label>
+            <select name="opt_2" id="opt_2">
+                <option value="manha">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
+            </select>
+
+            <!--Refeição?-->
+            <label for="opt_3">Você quer que o nosso date tenha alguma refeição?</label>
+            <select name="opt_3" id="opt_3">
+                <option value="1">Sim</option>
+                <option value="2">Não</option>
+            </select>
+
+            <!--Indoor ou outdoor?-->
+            <label for="opt_4">Você prefere uma atividade externa ou em lugar fechado?</label>
+            <select name="opt_4" id="opt_4">
+                <option value="indoor">Prefiro ao ar livre</option>
+                <option value="outdoor">Pode ser em um lugar fechado</option>
+            </select>
+
+            <!--Quantidade?-->
+            <label for="opt_5">Quantas atividades vamos fazer?</label>
+            <input type="number" name="qtd_atv" id="qtd_atv">
+        </div>
+        <div class="buttons d-flex justify-content-center align-items-center">
+            <button id="enviar">Enviar</button>
+            <button id="limpar">Limpar</button>
+        </div>
+        <div class="result">
+            <p id="resultado"></p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<!--Sweet alert-->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!--Icones-->
+<script src="https://kit.fontawesome.com/5892971926.js" crossorigin="anonymous"></script>
+</html>
+
+<!--opções dos seletores: economia, horário, refeição, atividade indoor ou outdoor, quantas atividades-->
