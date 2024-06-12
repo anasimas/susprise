@@ -22,6 +22,7 @@ body {
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     color: #f1e4f3;
+    text-align: center;
 }
 
 input,select {
@@ -38,7 +39,11 @@ label{
     text-align: center;
 }
 
-#enviar{
+.buttons{
+    width: 70%;
+}
+
+#enviar, #voltar{
     border-radius: 2vh;
     border: none;
     padding: 2vh;
@@ -46,5 +51,10 @@ label{
     margin: 3vh;
     background-color: #ffc8fb;
     color: #602437;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    font-size: 3vh;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+img{
+    max-width: 100%;
 }
