@@ -26,4 +26,5 @@ function voltar() {
   document.getElementById('spotifyPlayer').style.opacity = '0';
   document.getElementById('input').style.display = 'block';
   document.getElementById('input').className = 'input d-flex flex-column justify-content-center align-items-center';
+  document.getElementById('texto').innerText = "Feliz aniversário de noivado e dia dos namorados!"
 }
