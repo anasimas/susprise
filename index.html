@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container d-flex flex-column justify-content-center align-items-center" id="container">
-        <div class="header d-flex flex-column justify-content-center align-items-center">
+        <div class="header d-flex flex-column justify-content-center align-items-center" id="header">
             <h1>te amo!</h1>
             <p>Feliz aniversário de noivado e dia dos namorados!</p>
         </div>
@@ -23,10 +23,16 @@
                 <button id="enviar" onclick="enviar()"><i class="fa-solid fa-heart"></i></button>
             </div>
         </div>
+
+        <div id="spotifyPlayer">
+            <!--player-->
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6hdVWrV8WNCZRLUHU7Mz99?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <button class="buttons" id="voltar" onclick="voltar()">Voltar</button>
+        </div>
     </div>
 </body>
 <script src="script.js"></script>
-<!--Sweet alert-->
+<!-- Sweet alert -->
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <!--Icones-->
 <script src="https://kit.fontawesome.com/5892971926.js" crossorigin="anonymous"></script>

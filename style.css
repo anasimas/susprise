@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 body {
     background: linear-gradient(0deg, rgba(164,128,207,1) 11%, rgba(210,100,182,1) 59%, rgba(231,104,196,1) 75%, rgba(255,144,179,1) 100%);
     font-family: "Montserrat", sans-serif;
@@ -12,7 +11,7 @@ body {
 }
 
 .header {
-    margin: 5vh;
+    margin: 3vh;
     padding: 5vh;
     width: 80%;
     background: rgba(255, 255, 255, 0.2);
@@ -40,21 +39,47 @@ label{
 }
 
 .buttons{
-    width: 70%;
+    width: 30vw;
 }
 
-#enviar, #voltar{
+.input button{
     border-radius: 2vh;
     border: none;
-    padding: 2vh;
+    padding: 1vh;
     width: 100%;
     margin: 3vh;
     background-color: #ffc8fb;
     color: #602437;
-    font-size: 3vh;
+    font-size: 5vh;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 }
 
 img{
     max-width: 100%;
+}
+
+#spotifyPlayer{
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease, display 0.3s ease;
+}
+
+#spotifyPlayer button{
+    width: 20vh;
+    margin: 3vh;
+    font-size: 2vh;
+}
+
+@media only screen and (min-width: 600px) {
+    .header{
+        width: 20vw;
+    }
+
+    .input {
+        width: 20vw;
+    }
+
+    #enviar{
+        width: 10vw;
+    }
 }
