@@ -26,8 +26,16 @@
         </div>
 
         <div id="spotifyPlayer">
-            <!--player-->
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6hdVWrV8WNCZRLUHU7Mz99?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <!--players-->
+            <label for="opt_2">Escolha a memória</label>
+            <select name="opt_2" id="opt_2" onchange="seletor(this.options[this.selectedIndex].value)">
+                <option value="1">momentos divertidos</option>
+                <option value="2">romanticas</option>
+                <option value="3">espaço</option>
+                <option value="4">cantar no carro</option>
+                <option value="5">nossas divas pops</option>
+            </select>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6hdVWrV8WNCZRLUHU7Mz99?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" id="player"></iframe>
             <button class="buttons" id="voltar" onclick="voltar()">Voltar</button>
         </div>
     </div>
