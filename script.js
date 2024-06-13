@@ -15,6 +15,8 @@ function enviar() {
     document.getElementById('spotifyPlayer').style.opacity = '1';
     document.getElementById('input').style.display = 'none';
     document.getElementById('input').className = 'none'; //tira o display flex do bootstrap
+
+    document.getElementById('texto').innerText = "Esse mini disco virtual é um presente pra você, com músicas que eu penso em você quando escuto, por diferentes razões. Você é especial demais."
   }
 };
 
