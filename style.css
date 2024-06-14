@@ -86,7 +86,13 @@ iframe{
 
 @media only screen and (min-width: 1000px) {
     .header{
-        width: 20vw;
+        max-width: 30vw;
+        font-size: 0.9rem;
+        padding: 3vh;
+    }
+
+    .header h1{
+        font-size: 2rem;
     }
 
     .input {
@@ -95,5 +101,9 @@ iframe{
 
     #enviar{
         width: 10vw;
+    }
+
+    iframe{
+        max-width: 30vw;  
     }
 }
